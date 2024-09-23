@@ -2,7 +2,7 @@ import "./widgetLg.css"
 
 export default function WidgetLg() {
   const Button=({type})=>{
-    return <button className={"WidgetLgButton"+type}>{type}</button>
+    return <button className={"WidgetLgButton "+ type}>{type}</button>
   }
   return (
     <div className="widgetLg">
@@ -55,7 +55,7 @@ export default function WidgetLg() {
         <img src="http://localhost:3000/images/me.jpg" alt="do" className="widgetLgImg"></img>
         <span className="widgetLgName">susan carol</span>
       </td>
-      <td className="widgetLgDate">20 jan 2024</td>
+      <td className="widgetLgDAte">20 jan 2024</td>
       <td className="widgetLgAmount">22000$</td>
       <td className="widgetLgStatus">
         <Button type="Approved"/>
