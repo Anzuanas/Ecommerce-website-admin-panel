@@ -1,6 +1,6 @@
 import "./home.css"
 import Featuredinfo from "../../components/featuredInfo/Featuredinfo"
-import Charts from "../../components/charts/Charts"
+import Charts from "../../components/chart/Chart"
 import { userData } from "../../dummyData"
 import WidgetLg from "../../components/widgetLg/WidgetLg"
 import WidgetSm from "../../components/widgetSm/WidgetSm"

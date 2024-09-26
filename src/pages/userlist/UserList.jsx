@@ -53,7 +53,7 @@ export default function UserList() {
             renderCell: (params)=>{
                 return(
                     <div className="editDelete">
-                    <Link to={"/users/"+params.data.id}>
+                    <Link to={"/user/"+params.data.id}>
                     <button className="userListEdit">Edit</button>
                     </Link>
                    

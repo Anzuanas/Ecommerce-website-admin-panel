@@ -1,16 +1,14 @@
-import Sidebar from "./components/sidebar/sidebar";
+import Sidebar from "./components/sidebar/Sidebar";
 import Topbar from "./components/topbar/Topbar";
-import "./app.css";
+import "./App.css";
 import Home from "./pages/home/Home";
-import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes, // Changed from Switch to Routes
-  Route,
-} from "react-router-dom";
-import UserList from "./pages/userlist/UserList";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import UserList from './pages/UserList/UserList';
 import User from "./pages/user/User";
 import NewUser from "./pages/newUser/NewUser";
+import ProductList from "./pages/productList/ProductList";
+import Product from "./pages/product/Product";
+import NewProduct from "./pages/newProduct/NewProduct";
 
 function App() {
   return (
@@ -18,11 +16,14 @@ function App() {
       <Topbar />
       <div className="container">
         <Sidebar />
-        <Routes> {/* Use Routes instead of Switch */}
-          <Route path="/" element={<Home />} /> {/* Updated syntax */}
-          <Route path="/users" element={<UserList />} /> {/* Updated syntax */}
-          <Route path="/users/:userId" element={<User />} /> {/* Updated syntax */}
-          <Route path="/newUser" element={<NewUser />} /> {/* Updated syntax */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/users" element={<UserList />} />
+          <Route path="/user/:userId" element={<User />} />
+          <Route path="/newUser" element={<NewUser />} />
+          <Route path="/products" element={<ProductList />} />
+          <Route path="/product/:productId" element={<Product />} />
+          <Route path="/newProduct" element={<NewProduct />} />
         </Routes>
       </div>
     </Router>
