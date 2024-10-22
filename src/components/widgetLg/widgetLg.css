@@ -22,15 +22,15 @@
     border: none;
     border-radius: 10px;
 }
-.WidgetLgButton.Approved{
+.WidgetLgButton.approved{
     background-color: #e5faf2;
     color: #03ff64fa;
 }
-.WidgetLgButton.Declined{
+.WidgetLgButton.declined{
     background-color: #fff0f1;
     color: #ff0000fa;
 }
-.WidgetLgButton.Pending{
+.WidgetLgButton.pending{
     background-color: #ebf1fe;
     color: #ffae00fa;
 }
