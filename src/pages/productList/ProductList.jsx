@@ -58,13 +58,13 @@ export default function ProductList() {
         return (
           <>
             <Link to={"/product/" + params.row._id}>
-              <button className="button edit">
+              <button className="productListEdit">
                 {" "}
                 <Edit />{" "}
               </button>
             </Link>
             <button
-              className="button delete"
+              className="productListDelete"
               onClick={() => handleDelete(params.row._id)}
             >
               {" "}
